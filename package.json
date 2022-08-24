@@ -1,0 +1,25 @@
+{
+  "name": "obiwan",
+  "version": "1.0.0",
+  "description": "Json , HTML , Package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "123"
+  ],
+  "author": "Nika",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DOnEbrala/Homework_1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DOnEbrala/Homework_1/issues"
+  },
+  "homepage": "https://github.com/DOnEbrala/Homework_1#readme",
+  "devDependencies": {
+    "fs-extra": "^10.1.0"
+  }
+}
