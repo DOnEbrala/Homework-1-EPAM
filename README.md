@@ -1,2 +1,2 @@
-# Homework-1-EPAM
+# Homework1-EPAM
 EPAM
