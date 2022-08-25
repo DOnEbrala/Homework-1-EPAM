@@ -1,8 +1,8 @@
-// //-        Create a car object, add a color property to it with the value equals 'black'
+// -     Create a car object, add a color property to it with the value equals 'black'
 
-// -        Change the color property of the car object to 'green'
+// -   Change the color property of the car object to 'green'
 
-// -        Add the power property to the car object, which is a function and displays the engine power to the console
+//-   Add the power property to the car object, which is a function and displays the engine power to the console
 
 // -        Pears and apples are accepted to the warehouse, write a function that returns the result of adding the number of accepted pears and apples
 
@@ -16,5 +16,30 @@
 
 
 
-//#########################################################################################################
+//####################################################################################
+
+// // 1 - Create a car object, add a color property to it with the value equals 'black'
+
+// -  Change the color property of the car object to 'green'
+
+// -  Add the power property to the car object, which is a function and displays the engine power to the console : 
+
+
+
+const Car = {
+      car : 'Porsche',
+      color : "Black",
+      HorsePower() {
+        let Power = 562;
+        this.HorsePower = Power;
+        
+      }
+}
+
+Car.color = 'green';
+
+Car.HorsePower();
+
+console.log(Car);
+
 

@@ -1,5 +1,15 @@
-         const Luka = String(25)
-         const Liza = Number("23")
-         const Archil = Boolean(20)
+const Car = {
+      car : 'Porsche',
+      color : "Black",
+      HorsePower() {
+        let Power = 562;
+        this.HorsePower = Power;
+        
+      }
+}
 
-               console.log(Luka - Liza / Archil);
+Car.color = 'green';
+
+Car.HorsePower();
+
+console.log(Car);
