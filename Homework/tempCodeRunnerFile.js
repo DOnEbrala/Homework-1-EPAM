@@ -1,15 +1,25 @@
-const Car = {
-      car : 'Porsche',
-      color : "Black",
-      HorsePower() {
-        let Power = 562;
-        this.HorsePower = Power;
-        
+function test_prime(n)
+{
+
+  if (n===1)
+  {
+    return false;
+  }
+  else if(n === 2)
+  {
+    return true;
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        return false;
       }
+    }
+    return true;  
+  }
+
 }
 
-Car.color = 'green';
-
-Car.HorsePower();
-
-console.log(Car);
+console.log(test_prime(23))
