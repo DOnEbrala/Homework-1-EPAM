@@ -1,25 +1,11 @@
-function test_prime(n)
-{
+var numArray = [140000, 104, 99];
+numArray.sort(function(a, b) {
+  if( a === Infinity ) 
+    return 1; 
+  else if( isNaN(a)) 
+    return -1;
+  else 
+    return a - b;
+});
 
-  if (n===1)
-  {
-    return false;
-  }
-  else if(n === 2)
-  {
-    return true;
-  }else
-  {
-    for(var x = 2; x < n; x++)
-    {
-      if(n % x === 0)
-      {
-        return false;
-      }
-    }
-    return true;  
-  }
-
-}
-
-console.log(test_prime(23))
+console.log(numArray);
