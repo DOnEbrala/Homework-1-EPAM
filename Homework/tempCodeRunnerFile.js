@@ -1,25 +1,12 @@
-function test_odd(o)
-{
+for(let number=2; number<=12; number++){
+  let isODD = false;
 
-  if (o === 1)
-  {
-    return false;
+for (let i=2; i<= number-1;i++){
+  if(number%i=== 0){
+      isODD = true;
+      break
   }
-  else if(o === 2)
-  {
-    return true;
-  }else
-  {
-    for (var x = 3; x < o; x++)
-    {
-      if(o % x === 0)
-      {
-        return false;
-      }
-    }
-    return true;  
-  }
-
+}
+if (isODD) console.log(number);
 }
 
-console.log(test_odd(17))

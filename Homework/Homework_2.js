@@ -126,7 +126,7 @@ function test_prime(n)
 
 }
 
-console.log(test_prime(23))
+console.log(test_prime(1399))
 
 
 

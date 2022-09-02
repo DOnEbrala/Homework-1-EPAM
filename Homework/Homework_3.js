@@ -96,57 +96,16 @@ console.log(arrayOfInt);
 
 
 
-const arrayNumbers = [1,2,5,10,55];
-const randomnumber = 2;
+function findIndex (array , number ) {
+   for (let i = 0 ; i < array.length ; i++ ) {
+    if (array[i]=== number) {
+      return i; 
+    }
 
-
-// arrayNumbers.forEach((nika, index) => {
-//     const ind = index;
-//     randomnumber.
-// });
-
-// console.log (ragac);
-// const RN = arrayNumbers.filter(currentnumb => currentnumb === randomnumber );
-
-// console.log(RN);
-
-for (let i = 0; i < arrayNumbers.length; i++) {
-
-console.log(i)
+   }
+   return -1;
 }
-
-
-// tu amas aqvs igivie value rac aqvs imas mashin dawere eg value 
-
-
-//##########################################
-// const array1 = [1, 2, 3];
-// const iterator = array1.keys();
-
-// for (const key of iterator) {
-//   console.log(key);
-// } 
-
-
-
-//############
-
-
-for (let i=0; i < arrayNumbersy.size() ; i++){
-    console.log(i)
-}
-
-
-// let name  =['noor','alex','biker','hosler']
-// let ages = [ 11 , 13 , 15 , 17];
-
-// const newvalue=(
-//     name.map((nameArrayElement,index)=>{
-//         return [nameArrayElement,ages[index]]
-//     })
-// )
-// console.log(newvalue);
-
+console.log(findIndex([4,1,6],3));
 
 
 
@@ -164,31 +123,17 @@ for (let rep = 1; rep < 10 ; rep++) {
 
 
 
-function test_prime(n)
-{
+for(let number=2 ; number<=100; number++){
+  let isPrime = true;
 
-  if (n===1)
-  {
-    return false;
+for (let i=2; i<= number-1;i++){
+  if(number%i===0){
+      isPrime = false;
+      break
   }
-  else if(n === 2)
-  {
-    return true;
-  }else
-  {
-    for(var x = 2; x < n; x++)
-    {
-      if(n % x === 0)
-      {
-        return false;
-      }
-    }
-    return true;  
-  }
-
 }
-
-console.log(test_prime(12));
+if (isPrime) console.log(number);
+}
 
 
 
@@ -196,39 +141,18 @@ console.log(test_prime(12));
 
 
 
-function test_odd(o)
-{
 
-  if (o === 1)
-  {
-    return false;
-  }
-  else if(o === 2)
-  {
-    return true;
-  }else
-  {
-    for (var x = 3; x < o; x++)
-    {
-      if(o % x === 0)
-      {
-        return false;
-      }
-    }
-    return true;  
-  }
+for(let number=2; number<=12; number++){
+  let isODD = false;
 
+for (let i=2; i<= number-1;i++){
+  if(number%i=== 0){
+      isODD = true;
+      break
+  }
 }
-
-console.log(test_odd(17))
-
-
-
-
-
-
-
-
+if (isODD) console.log(number);
+}
 
 
 
