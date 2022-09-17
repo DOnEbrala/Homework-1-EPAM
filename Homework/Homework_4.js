@@ -1,3 +1,5 @@
+// Create 2 objects: animal and cat, add move property to animal object, cat object must inherit move property from object animal
+
 
 class Animal {
     constructor(name, ability){
@@ -29,3 +31,22 @@ const dogg = new Cat("cat", "swim");
 
 dogg.abilities();
 dogg.skill();
+
+
+
+
+
+
+// class Animal extends cat {
+
+//     constructor(ability1, ability2){
+//      super(ability1, ability2)
+
+//     }
+//     abilities(){
+//         console.log(`${this.Power} ${this.Speed}`)
+//     }
+     
+// }
+
+// const dog = new cat("")
