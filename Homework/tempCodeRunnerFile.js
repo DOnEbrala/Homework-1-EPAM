@@ -1,6 +1,11 @@
-const letter1 = 'ahb acb aeb aeeb adcb axeb';
+try {
+    console.log(a)
+    let a = 3;
+    
+} catch (err) {
+    alert( 'let must be declared' );
+    let b = 1/0;
 
-
-console.log(letter1.match(/a.b/g));
-
-
+} finally{
+    alert("cannot be divided by zero'")
+}
