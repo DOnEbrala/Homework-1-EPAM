@@ -1,12 +1,11 @@
-try {
-    let b = 1/0;
-    if (b == Infinity ){
-        throw new Error("cannot divide by zero")
-    }
-    console.log(b);
-
-} catch (err){
-
-    console.log(err);
+function isOdd(numbers) {
+  if (numbers % 2 != 0) {
+      return true;
+  }
+  return false;
 
 }
+var input = 343;
+var result = isOdd(input);
+console.log(result)
+//Outpur: true

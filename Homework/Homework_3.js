@@ -122,6 +122,7 @@ for (let rep = 1; rep < 10 ; rep++) {
 // 9 - Implement a loop that prints prime numbers to the console 
 
 
+//incorect
 
 for(let number=2 ; number<=100; number++){
   let isPrime = true;
@@ -136,10 +137,41 @@ if (isPrime) console.log(number);
 }
 
 
+//correct
+
+
+function test_prime(n)
+{
+
+  if (n===1)
+  {
+    return false;
+  }
+  else if(n === 2)
+  {
+    return true;
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        return false;
+      }
+    }
+    return true;  
+  }
+
+}
+
+console.log(test_prime(11))
+
+
+
 
 // 10 - Implement a loop that prints odd numbers to the console
 
-
+//incorect
 
 
 for(let number=2; number<=12; number++){
@@ -156,11 +188,63 @@ if (isODD) console.log(number);
 
 
 
+//correct 
 
 
+function test_odd(b)
 
 
+{
+
+  if (b===1)
+  {
+    return true;
+  }
+  else if(b === 2)
+  {
+    return false;
+  }else
+  {
+    for(var x = 2; x < b; x++)
+    {
+      if(b % x === 1)
+      {
+        return false;
+      }
+    }
+    return true;  
+  }
+
+}
+
+console.log(test_odd(9))
 
 
+function test_odd(b){
+for (var x=0; x<=b; x++) {
+  if (b % x === 0) {
+          console.log(x +  " is even");
+  }
+  else if (b % 2 === 0) {
+          console.log(x + " is even");   
+  }
+  else {
+          console.log(x + " is odd");
+  }
+}
+}
+console.log(test_odd(20));
 
+
+function isOdd(numbers) {
+  if (numbers % 2 != 0) {
+      return true;
+  }
+  return false;
+
+}
+var input = 343;
+var result = isOdd(input);
+console.log(result)
+//Outpur: true
 
