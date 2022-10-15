@@ -1,5 +1,5 @@
 node_modules
 .npm-init.js
-package
-package-lock
+package.json
+package-lock.json
 
