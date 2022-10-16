@@ -1,237 +1,172 @@
-// 1 - Perform addition of various types (string + boolean, string + number, number + boolean)
+let fname = "Nika";
+let Lname = true;
 
+const x = fname + " " + Lname;
 
+console.log(x);
 
-// A - String + Boolean
+// A
 
+let numb = 5;
+let str = "6";
 
-     let fname = "Nika"; 
-     let Lname = true;
+const answer = numb + str;
 
-        const x = fname + " " +  Lname;
-        console.log(x);
+console.log(answer);
 
+//A-1
 
+let born = "2000";
+let today = 2022;
 
-// B - String + Number ########################################################
+const age = today - born;
 
+console.log(age);
 
-     let numb = 5;
-     let str = "6"
+// A-2
 
-        const answer = numb + str; 
-        console.log(answer);
+let g = 25;
+let w = true;
 
+const u = g + w;
 
+console.log(u);
 
-//another B :
+// B
 
+let a = "10";
+let b = false;
 
-     let born = "2000";
-     let today = 2022;
+const y = a * b;
 
-        const age = today - born;
-        console.log(age);     
+console.log(y);
 
+// B-2
 
+let lobiani = 5;
+let khachapuri = "10";
 
-// C - Number + Boolean  ########################################################
+const Supra = lobiani * khachapuri;
 
+Supra === 50 ? console.log("true") : console.log("false");
 
-     let G = 25;
-     let Y = true;
+// B-2-1
 
-        const U = G + Y;
-        console.log(U);  
-          
-    
+let apple = "two";
+let banana = 11;
 
+const basket = apple * banana; //console.log(Basket);
 
+basket === 22 ? console.log("true") : console.log("false");
 
+// B-3
 
-//2 - Perform multiplication of various types (string * boolean, string * number, number * boolean)
+let razer = true;
+let hyperx = 33;
 
+const r = razer * hyperx;
 
+console.log(r);
 
-// A - string * boolean 
+// C
 
+let khinkali = "meat";
+let pelmeni = false;
 
-        let a = "10";
-        let b = false;
-        
-            const y = a * b;
-            console.log(y);
+const food = khinkali / pelmeni;
 
+console.log(food);
 
+//C-1-1
 
-// B - string * number ########################################################
+let keyboard = "10";
+let mice = true;
 
+const peripherals = keyboard / mice;
 
-        let Lobiani = 5;
-        let Khachapuri = "10"; 
+console.log(peripherals);
 
-            const Supra = Lobiani * Khachapuri;
-            (Supra === 50) ? console.log("true") : console.log("false")            
+//C-2
 
+let lg = "Washmachine";
+let bosh = 55;
 
-//Another B :
+const tehc = lg / bosh;
 
+console.log(tehc);
 
-        let Apple = "two";
-        let Banana = 11;
-           
-           const Basket = Apple * Banana;//console.log(Basket);
-           (Basket === 22 ) ? console.log('true'): console.log("false");
+//C-2-1
 
+let joystick = "23";
+let wheel = 32;
 
+const game = joystick / wheel;
 
+console.log(game);
 
-// C - number * boolean ########################################################
+//C-3
 
+let masterChief = 117;
+let cortana = false;
 
-        let Razer = true;
-        let Hyperx = 33;
+const halo = masterChief / cortana;
 
-           const R = Razer * Hyperx ; 
-           console.log(R);
+console.log(halo);
 
+//D
 
+const inputYear = "1991";
 
-// 3 - Divide different types (string / boolean, string / number, number / Boolean)
+console.log(Number(inputYear) + 18);
 
+//D-1-1
 
+const key = 20;
 
-// A - string / boolean 
+console.log(String(key) - "10");
 
+//or
 
-        let Khinkali = "meat";
-        let Pelmeni = false;
+console.log(String(key) + 10);
 
-            const food = Khinkali / Pelmeni ;
-            console.log(food);
+//D-1-2
 
+const myName = "Nika";
 
+console.log(Number("myName"));
 
-//Another A :
+//D-1-3
 
+console.log(Boolean(25));
 
-        let Keyboard = "10"
-        let Mice = true;
+console.log(Boolean(0));
 
-            const peripherals = Keyboard / Mice;
-            console.log(peripherals);
-            
+//D-1-4
 
+console.log(Number(true));
 
-// B - string / number ########################################################
+console.log(Number(false));
 
+//D-1-5
 
-        let LG = "Washmachine";
-        let Bosh = 55;
+console.log(Boolean("Converted Boolean"));
+//or
+console.log(Boolean(" "));
+//or
+console.log(String(false));
+//or
+console.log(String(true));
+//or
 
-            const Tehc = LG / Bosh;
-            console.log(Tehc);
+const me = true;
+const you = Boolean("man");
 
+console.log(me + you);
 
+//D-1-6
 
-//Another B : 
+const luka = String(25);
+const liza = Number("23");
+const archil = Boolean(20);
 
-
-        let Joystick = "23";
-        let Wheel = 32;
-
-            const game = Joystick / Wheel;
-            console.log(game);
-
-
-
-// C - number / Boolean ########################################################
-
-
-        let MasterChief = 117;
-        let Cortana = false;
-
-            const Halo = MasterChief / Cortana;
-            console.log(Halo);
-
-
-
-// 4 - Perform explicit conversion (number, string, boolean)
-
-
-//number && string
-
-
-        const inputYear = '1991';
-
-            console.log(Number(inputYear) + 18);
-
-
-// Another number && string - 1
-
-
-        const Key = 20;
-
-              console.log(String(Key) - "10");
-
-              //or
-              
-              console.log(String(Key) + 10);
-
-
-
-// Another number && string - 2
-               
-
-        const myName = "Nika"
-
-              console.log(Number("myName"));
-
-
-
-//number && boolean  ########################################################
-
-
-              console.log(Boolean(25));
-
-              console.log(Boolean(0));
-
-
-
-//another number && boolean 
-
-
-              console.log(Number(true));
-
-              console.log(Number(false));
- 
-   
-
-
-
-//string && boolean ########################################################
-        
-              
-             console.log(Boolean("Converted Boolean"));
-        //or
-             console.log(Boolean(" "));
-        //or
-             console.log(String(false));
-        //or
-             console.log(String(true));
-        //or
-
-             const me = true;
-             const you = Boolean("man")
-                   console.log(me + you);
-
-
-//number && string && boolean ; 
-
-
-         const Luka = String(25)
-         const Liza = Number("23")
-         const Archil = Boolean(20)
-
-               console.log(Luka - Liza / Archil);
-
+console.log(luka - liza / archil);
