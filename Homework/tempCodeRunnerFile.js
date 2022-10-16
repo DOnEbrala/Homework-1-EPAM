@@ -1,11 +1,25 @@
-function isOdd(numbers) {
-  if (numbers % 2 != 0) {
-      return true;
+function test_prime(n)
+{
+
+  if (n===1)
+  {
+    return false;
   }
-  return false;
+  else if(n === 2)
+  {
+    return true;
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        return false;
+      }
+    }
+    return true;  
+  }
 
 }
-var input = 343;
-var result = isOdd(input);
-console.log(result)
-//Outpur: true
+
+console.log(test_prime(10))
